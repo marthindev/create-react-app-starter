@@ -1,3 +1,14 @@
+# React Router
+
+## Install React Router
+
+yarn add react-router-dom
+
+## Add basic React Router config
+
+Replace src/App.js:
+
+```
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
@@ -78,3 +89,4 @@ function Topic({ match }) {
 }
 
 export default BasicExample;
+```
