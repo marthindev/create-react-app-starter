@@ -1,3 +1,18 @@
+# React Router
+
+## Install React Router
+
+yarn add react-router-dom
+
+## Install React Transition Group
+
+yarn add react-transition-group
+
+## Add basic React Router config
+
+Replace src/App.js:
+
+```
 import React from "react";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import {
@@ -157,3 +172,4 @@ styles.rgb = {
 };
 
 export default AnimationExample;
+```
