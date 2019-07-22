@@ -3,15 +3,11 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  const [hasError, setErrors] = useState(false);
   const [planets, setPlanets] = useState({});
 
   async function fetchData() {
     const res = await fetch("https://swapi.co/api/planets/4/");
-    res
-      .json()
-      .then(res => setPlanets(res))
-      .catch(err => setErrors(err));
+    res.json().then(res => setPlanets(res));
   }
 
   useEffect(() => {
@@ -35,7 +31,6 @@ function App() {
         </a>
       </header>
       <div>{JSON.stringify(planets)}</div>
-      <div>Has error: {JSON.stringify(hasError)}</div>
     </div>
   );
 }
